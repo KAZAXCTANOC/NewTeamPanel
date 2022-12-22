@@ -46,7 +46,7 @@ namespace TeamPanelStart
                                         "Стяжка",
                                         @"Стяжка помещений",
                                         Properties.Resources.CP6);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
+                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2023" });
                                     break;
                                 }
                                 catch (Exception e)
@@ -56,35 +56,6 @@ namespace TeamPanelStart
                                 }
                             }
 
-                        case "BatchPrintYay_2023.dll": 
-                            {
-                                try
-                                {
-                                    createTeamPanel.AddButtonBitmap(
-                                        ribbonPanelBim, 
-                                        Pathes.PathToBatchPrintYay_2023 + needAddIn,
-                                        "BatchPrintYay.CommandBatchPrint",
-                                        "Пакетная печать", 
-                                        @" ",  
-                                        Properties.Resources.CP6);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
-
-                                    createTeamPanel.AddButtonBitmap(
-                                        ribbonPanelBim,
-                                        Pathes.PathToBatchPrintYay_2023 + needAddIn,
-                                        "BatchPrintYay.CommandRefreshSchedules",
-                                        "Пакетная печать",
-                                        @" ",
-                                        Properties.Resources.CP6);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
-                                    break;
-                                }
-                                catch (Exception e)
-                                {
-                                    TaskDialog.Show("ошибка", $"При зазрузке палина 'BatchPrintYay_2023' произошла ошибка: \n{e.Message}");
-                                    break;
-                                }
-                            }
                         case "OKvsODB.dll":
                             {
                                 try
@@ -96,7 +67,7 @@ namespace TeamPanelStart
                                         "Заполнение окон", 
                                         @"*возможно это не заполенение окон",  
                                         Properties.Resources.CP6);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
+                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2023" });
                                     break;
                                 }
                                 catch (Exception e)
@@ -105,6 +76,7 @@ namespace TeamPanelStart
                                     break;
                                 }
                             }
+
                         case "CalcPrice.dll":
                             {
                                 try
@@ -116,7 +88,7 @@ namespace TeamPanelStart
                                         "Импорт расценок",
                                         @"",
                                         Properties.Resources.CP6);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
+                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2023" });
                                     break;
                                 }
                                 catch (Exception e)
@@ -137,7 +109,7 @@ namespace TeamPanelStart
                                     "Квартирография",
                                     @"Квартирография",
                                     Properties.Resources.Квартирография_80х80);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
+                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2023" });
                                     break;
                                 }
                                 catch (Exception e)
@@ -159,7 +131,7 @@ namespace TeamPanelStart
                                         "Обрезка квартир",
                                         @"Обрезка квартир",
                                         Properties.Resources.CW);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
+                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2023" });
                                     break;
                                 }
                                 catch (Exception e)
@@ -182,7 +154,7 @@ namespace TeamPanelStart
                                         "Отделка помещений",
                                         @"Отделка",
                                         Properties.Resources.IP);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
+                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2023" });
                                     break;
                                 }
                                 catch (Exception e)
@@ -204,7 +176,7 @@ namespace TeamPanelStart
                                         "Финансовый калькулятор",
                                         @"Финансовый калькулятор",
                                         Properties.Resources.Цены_80х80);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
+                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2023" });
                                     break;
                                 }
                                 catch (Exception e)
@@ -226,7 +198,7 @@ namespace TeamPanelStart
                                         "Экспорт в Profitbase",
                                         @"Экспорт в Profitbase",
                                         Properties.Resources.IP);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
+                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2023" });
                                     break;
                                 }
                                 catch (Exception e)
@@ -248,7 +220,7 @@ namespace TeamPanelStart
                                         "Эскиз",
                                         @"Эскиз",
                                         Properties.Resources.IP);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
+                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2023" });
                                     break;
                                 }
                                 catch (Exception e)
@@ -270,7 +242,7 @@ namespace TeamPanelStart
                                         "Экспорт в DWF",
                                         @"Экспорт в DWF",
                                         Properties.Resources.IP);
-                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2019" });
+                                    addInDataForServers.Add(new AddInDataForServer { PluginName = needAddIn, RevitVersion = "2023" });
                                     break;
                                 }
                                 catch (Exception e)
